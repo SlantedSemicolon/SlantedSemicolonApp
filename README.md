@@ -24,3 +24,4 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+"Slanted Semicolon First Application using Ionic 3 and Angular2" 
