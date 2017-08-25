@@ -3,11 +3,13 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>My First List</ion-title>
+    <ion-title>About Us</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+  <h3>About us page</h3>
+  <!-- We could list our roles and such here -->
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon name="{{item.icon}}" item-left></ion-icon>
