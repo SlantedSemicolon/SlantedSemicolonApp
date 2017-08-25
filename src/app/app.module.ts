@@ -10,12 +10,15 @@ import { AboutPage } from '../pages/about/about';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+let allModules = [
+  MyApp,
+  SlantedHomePage,
+  ItemDetailsPage,
+  AboutPage
+]
 @NgModule({
   declarations: [
-    MyApp,
-    SlantedHomePage,
-    ItemDetailsPage,
-    AboutPage
+    ...allModules
   ],
   imports: [
     BrowserModule,
@@ -23,10 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    SlantedHomePage,
-    ItemDetailsPage,
-    AboutPage
+    ...allModules
   ],
   providers: [
     StatusBar,
